@@ -33,6 +33,7 @@ export const Card: React.FC<CardProps> = ({
     <>
       {isEditCard && (
         <UpdateCar
+          nameButton="Save"
           dbHandler={(propertiesCard) => changeCar(propertiesCard)}
           dispatchHandler={(propertiesCard) =>
             dispatch(changeCarAction(propertiesCard))

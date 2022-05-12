@@ -2,17 +2,17 @@
   "cars": [
     {
       "id": 1,
-      "title": "Audi Q7",
+      "title": "Audi Q8",
       "price": 73000,
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in. Enim fuga, corporis atque illo beatae, magnam incidunt eaque architecto distinctio neque eos? Amet, officiis qui? Id quia dolorum in.",
-      "image": "blob:http://localhost:3001/afb47336-bb64-449f-ae97-3ab6a1a2bba8"
+      "image": "img/AudiQ8.jpg"
     },
     {
       "id": 2,
-      "title": "AAA M",
-      "price": "75577600",
-      "description": "L",
-      "image": "blob:http://localhost:3001/5bfe4cc1-123f-4b54-a098-07e66f6d7aba"
+      "title": "Mersedes Gelendvagen efefe",
+      "price": 75500,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in. Enim fuga, corporis atque illo beatae, magnam incidunt eaque architecto distinctio neque eos? Amet, officiis qui? Id quia dolorum in.",
+      "image": "img/MersedesGelendvagen.jpg"
     },
     {
       "id": 3,
@@ -23,7 +23,7 @@
     },
     {
       "id": 4,
-      "title": "Porsche 9999999999",
+      "title": "Porsche 911",
       "price": 99000,
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in. Enim fuga, corporis atque illo beatae, magnam incidunt eaque architecto distinctio neque eos? Amet, officiis qui? Id quia dolorum in.",
       "image": "img/Porsche911.jpg"

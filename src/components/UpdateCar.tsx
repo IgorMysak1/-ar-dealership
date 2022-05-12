@@ -1,6 +1,6 @@
 import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Button, Card, InputText, addCarAction, Car } from "./index";
+import { Button, Card, InputText, Car } from "./index";
 import "../style/modalWindow.scss";
 import "../style/updateCar.scss";
 
@@ -9,6 +9,7 @@ interface UpdateCarProps {
   initialState?: Car;
   dbHandler: ({}: Car) => void;
   dispatchHandler: ({}: Car) => void;
+  nameButton: string;
 }
 interface ValidProperties {
   title: boolean;
@@ -20,6 +21,7 @@ export const UpdateCar: React.FC<UpdateCarProps> = ({
   isOpenModalWindow,
   dbHandler,
   dispatchHandler,
+  nameButton,
   initialState = {
     id: 0,
     title: "",
@@ -28,7 +30,6 @@ export const UpdateCar: React.FC<UpdateCarProps> = ({
     image: "img/silhouette.jpg",
   } as Car,
 }) => {
-  const dispatch = useDispatch();
   const [propertiesCard, setPropertiesCard] = useState(initialState);
   const [validProperties, setvalidProperties] = useState<ValidProperties>({
     title: true,
@@ -137,7 +138,7 @@ export const UpdateCar: React.FC<UpdateCarProps> = ({
               margin="0 15px 0 0"
             />
             <Button
-              text="Add"
+              text={nameButton}
               handler={() => updateCar()}
               margin="0 0 0 15px"
             />

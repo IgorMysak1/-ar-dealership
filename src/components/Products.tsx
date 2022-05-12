@@ -34,6 +34,7 @@ export const Products: React.FC = () => {
       <ListOfProducts />
       {isOpenUpdateCar && (
         <UpdateCar
+          nameButton="Add"
           dbHandler={(propertiesCard) => setCar(propertiesCard)}
           dispatchHandler={(propertiesCard) =>
             dispatch(addCarAction(propertiesCard))
