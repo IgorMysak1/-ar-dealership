@@ -1,0 +1,14 @@
+@import "../style//mediaQueryConstants.scss";
+
+.header {
+  background: #191914;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  @media (max-width: $md4) {
+    padding: 7px;
+    font-size: 25px;
+  }
+}

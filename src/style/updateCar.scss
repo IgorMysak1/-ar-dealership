@@ -1,0 +1,96 @@
+@import "../style/mediaQueryConstants.scss";
+.updateCar {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    @media (max-width: $md3) {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    width: 40%;
+    @media (max-width: $md3) {
+      display: none;
+    }
+    @media (max-width: $md2) {
+      width: 50%;
+    }
+  }
+  &__file {
+    border: 2px solid grey;
+    &.invalid {
+      border: 2px solid red;
+    }
+  }
+}
+.content-updateCar {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  @media (max-width: $md3) {
+    align-items: center;
+  }
+  &__create {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 30px;
+    @media (max-width: $md2) {
+      width: 50%;
+    }
+    @media (max-width: $md3) {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &__file {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    &::after {
+      content: "Load your photo";
+      position: absolute;
+      top: -24px;
+      left: 0;
+    }
+    label {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      padding: 10px;
+      background: grey;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        height: 20px;
+        width: 20px;
+      }
+      p {
+        padding-left: 10px;
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      display: none;
+    }
+  }
+  &__btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../style/mediaQueryConstants.scss";
+
+.modalWindow {
+  position: fixed;
+  width: 95%;
+  min-height: 93vh;
+  top: 24px;
+  margin: 0 auto;
+  background: #191914;
+  padding: 30px;
+  z-index: 100;
+  @media (max-width: $md3) {
+    padding: 20px;
+  }
+}
